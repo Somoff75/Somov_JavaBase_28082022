@@ -19,16 +19,8 @@ public class Homework4 {
 
         double totalRateMin = total * (attackWarMin + attackArchMin + attackRiderMin) * coefficient;
 
-        System.out.println("Total attack rate Li's army are: "  + totalRateLi);
-        System.out.println("Total attack rate Min's army are: "  + totalRateMin);
-
-
-
-
-
-
-
-
+        System.out.println("Total attack rate Li's army are: " + totalRateLi);
+        System.out.println("Total attack rate Min's army are: " + totalRateMin);
 
 
     }
