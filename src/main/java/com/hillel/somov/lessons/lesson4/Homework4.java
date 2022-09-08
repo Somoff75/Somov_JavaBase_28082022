@@ -4,8 +4,8 @@ public class Homework4 {
 
     public static void main(String[] args) {
 
-        final int total = 860;
-        final double coefficient = 1.5;
+        final int TOTAL = 860;
+        final double COEF = 1.5;
 
         int attackWarLi = 13;
         int attackArchLi = 24;
@@ -15,9 +15,9 @@ public class Homework4 {
         int attackArchMin = 35;
         int attackRiderMin = 12;
 
-        double totalRateLi = total * (attackWarLi + attackArchLi + attackRiderLi);
+        double totalRateLi = TOTAL * (attackWarLi + attackArchLi + attackRiderLi);
 
-        double totalRateMin = total * (attackWarMin + attackArchMin + attackRiderMin) * coefficient;
+        double totalRateMin = TOTAL * (attackWarMin + attackArchMin + attackRiderMin) * COEF;
 
         System.out.println("Total attack rate Li's army are: " + totalRateLi);
         System.out.println("Total attack rate Min's army are: " + totalRateMin);
