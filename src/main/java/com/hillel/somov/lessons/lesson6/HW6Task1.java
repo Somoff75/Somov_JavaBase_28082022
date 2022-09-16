@@ -13,52 +13,47 @@ public class HW6Task1 {
         Scanner sc = new Scanner(System.in);
         int guessNumber = sc.nextInt();
 
-        if (guessNumber > number || guessNumber < number) {
-
-            if (guessNumber <0 || guessNumber > 10) {
-
-                System.out.println("Wrong range! ");
-                System.exit(0);
-
-            }
-
-            for (int counter = 2; counter > 0; --counter) {
-
-                if (guessNumber > number) {
-                    if (guessNumber < 0 || guessNumber > 10) {
-
-                        System.out.println("Wrong range! ");
-                        System.exit(0);}
-
-                    System.out.println("Your number is more! Remaining attempts: " + counter);
-                    Scanner sc1 = new Scanner(System.in);
-                    guessNumber = sc1.nextInt();
-
-                } else if (guessNumber < number) {
-
-                    System.out.println("Your number is less! Remaining attempts: " + counter);
-                    Scanner sc2 = new Scanner(System.in);
-                    guessNumber = sc2.nextInt();
-                }
-
-            }
-            if (guessNumber == number) {
-                System.out.println("You win! ");
-            }
-
-        }
         if (guessNumber < 0 || guessNumber > 10) {
 
             System.out.println("Wrong range! ");
             System.exit(0);
         }
-        if (guessNumber > number || guessNumber < number) {
-            System.out.println("You loose! ");
+
+
+        for (int counter = 2; counter > 0; --counter) {
+
+            if (guessNumber < 0 || guessNumber > 10) {
+
+                System.out.println("Wrong range! ");
+                System.exit(0);
+            }
+
+            if (guessNumber > number) {
+
+                System.out.println("Your number is more! Remaining attempts: " + counter);
+                guessNumber = sc.nextInt();
+
+            } else if (guessNumber < number) {
+
+                System.out.println("Your number is less! Remaining attempts: " + counter);
+                guessNumber = sc.nextInt();
+            }
 
         }
+        if (guessNumber == number) {
+            System.out.println("You win! ");
+        }
 
+        if (guessNumber > number || guessNumber < number) {
+            System.out.println("You loose! ");
+        }
     }
-
 }
+
+
+
+
+
+
 
 
