@@ -9,11 +9,11 @@ public class Deal {
         int cardsPlayer = 5;
         int players;
 
-        String[] cardSsuits = {"\u2660", "\u2665", "\u2663", "\u2666"};
+        String[] cardSuits = {"\u2660", "\u2665", "\u2663", "\u2666"};
 
         String[] cardRank = {"2", "3", "4", "5", "6", "7", "8", "9", "10","Jack", "Queen", "King", "Ace"};
 
-        int n = cardSsuits.length * cardRank.length;
+        int n = cardSuits.length * cardRank.length;
 
         for (; ; ) {
             Scanner sc = new Scanner(System.in);
@@ -45,8 +45,8 @@ public class Deal {
 
         String[] deck = new String[n];
         for (int i = 0; i < cardRank.length; i++) {
-            for (int j = 0; j < cardSsuits.length; j++) {
-                deck[cardSsuits.length * i + j] = cardRank[i] + " " + cardSsuits[j];
+            for (int j = 0; j < cardSuits.length; j++) {
+                deck[cardSuits.length * i + j] = cardSuits[j] + " " + cardRank[i];
             }
         }
 
