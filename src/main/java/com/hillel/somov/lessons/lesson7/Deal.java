@@ -11,7 +11,7 @@ public class Deal {
 
         String[] cardSuits = {"\u2660", "\u2665", "\u2663", "\u2666"};
 
-        String[] cardRank = {"2", "3", "4", "5", "6", "7", "8", "9", "10","Jack", "Queen", "King", "Ace"};
+        String[] cardRank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
 
         int n = cardSuits.length * cardRank.length;
 
@@ -60,6 +60,7 @@ public class Deal {
         for (int i = 0; i < players * cardsPlayer; i++) {
             System.out.println(deck[i]);
             if (i % cardsPlayer == cardsPlayer - 1)
+
                 System.out.println();
         }
     }

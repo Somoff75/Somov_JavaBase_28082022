@@ -35,7 +35,7 @@ public class Rugby2 {
         }
 
         System.out.println();
-        System.out.print("Average age Team 1 -  " + sumAge2 / GAMERS + " years.");
+        System.out.print("Average age Team 2 -  " + sumAge2 / GAMERS + " years.");
 
 
     }
