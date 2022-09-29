@@ -9,15 +9,35 @@ public class Matrix {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter rows");
-        int m = sc.nextInt();
 
-        System.out.println("Enter columns");
-        int n = sc.nextInt();
+        int m = 0;
 
-        if (m < 0 || n < 0) {
-            System.out.println("Value cannot be negative");
+        if (sc.hasNextInt()) {
+            m = sc.nextInt();
+            if (m < 0) {
+                System.out.println("Value cannot be negative");
+                System.exit(0);
+            }
+        } else {
+            System.out.println("The input data can only be an integer!");
             System.exit(0);
         }
+
+        System.out.println("Enter columns");
+
+        int n = 0;
+
+        if (sc.hasNextInt()) {
+            n = sc.nextInt();
+            if (n < 0) {
+                System.out.println("Value cannot be negative");
+                System.exit(0);
+            }
+        } else {
+            System.out.println("The input data can only be an integer!");
+            System.exit(0);
+        }
+
         System.out.println("Enter max numbers");
         int max = sc.nextInt();
 
