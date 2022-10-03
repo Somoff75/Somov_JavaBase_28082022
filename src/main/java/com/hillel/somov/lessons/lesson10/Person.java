@@ -1,33 +1,46 @@
 package com.hillel.somov.lessons.lesson10;
 
 public class Person {
+    private String name;
+    private String surname;
+    private String city;
+    private String phoneNumber;
 
     public static void main(String[] args) {
 
-        String name1 = "Ostap";
-        String name2 = "Vasil";
-        String name3 = "Barbra";
-        String surname1 = "Bender";
-        String surname2 = "Pupkin";
-        String surname3 = "Streisand";
-        String city1 = "Odesa";
-        String city2 = "Berdychiv";
-        String city3 = "Atlanta";
-        String phoneNumber1 = "380507777771";
-        String phoneNumber2 = "380734541213";
-        String phoneNumber3 = "+12455556699";
+        Person person1 = new Person();
+        person1.name = "Ostap";
+        person1.surname = "Bender";
+        person1.city = "Odesa";
+        person1.phoneNumber = "380507777771";
 
-        personInfo(name1, surname1, city1, phoneNumber1);
+        Person person2 = new Person();
+        person2.name = "Vasil";
+        person2.surname = "Pupkin";
+        person2.city = "Berdychiv";
+        person2.phoneNumber = "380734541213";
+
+        Person person3 = new Person();
+        person3.name = "Barbra";
+        person3.surname = "Streisand";
+        person3.city = "Atlanta";
+        person3.phoneNumber = "+12455556699";
+
+
+        String sentence = person1.personInfo();
+        System.out.println(sentence);
         System.out.println();
-        personInfo(name2, surname2, city2, phoneNumber2);
+        sentence = person2.personInfo();
+        System.out.println(sentence);
         System.out.println();
-        personInfo(name3, surname3, city3, phoneNumber3);
+        sentence = person3.personInfo();
+        System.out.println(sentence);
 
     }
 
-    static void personInfo(String name, String surname, String city, String phoneNumber) {
-        System.out.print("Зателефонувати громадянинові " + name + " " + surname + ", з міста " + city + ", можна за номером: " + phoneNumber + ".");
-
+    String personInfo() {
+        return "Зателефонувати громадянинові " + name + " " + surname + ", з міста " + city + ", можна за номером: " + phoneNumber;
     }
+
 
 }
