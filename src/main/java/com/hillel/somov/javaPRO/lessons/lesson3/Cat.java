@@ -12,7 +12,7 @@ public class Cat extends Animals {
 
     @Override
     public void swim (int swim) {
-        System.out.println("Cat's can't swim");
+        System.out.println("Cats can't swim!");
     }
 
 }
