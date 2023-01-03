@@ -1,9 +1,9 @@
 package com.hillel.somov.javaPRO.lessons.HW9;
 
 public class FileData {
-    private final String name;
-    private final String path;
-    private final int size;
+    private  String name;
+    private  String path;
+    private  int size;
     public FileData(String name, String path, int size) {
         this.name = name;
         this.path = String.valueOf(path);
@@ -15,7 +15,7 @@ public class FileData {
     public String getName() {
         return name;
     }
-    public double getSize() {
+    public int getSize() {
         return size;
     }
     @Override
