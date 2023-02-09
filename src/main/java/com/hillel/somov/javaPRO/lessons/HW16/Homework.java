@@ -2,11 +2,11 @@ package com.hillel.somov.javaPRO.lessons.HW16;
 
 
 public class Homework {
-    private String id;
+    private int id;
     private String name;
     private String description;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
     public String getName() {
@@ -16,7 +16,7 @@ public class Homework {
         return description;
     }
     public void setId(int id) {
-        this.id = String.valueOf(id);
+        this.id = Integer.parseInt(String.valueOf(id));
     }
     public void setName(String name) {
         this.name = name;
