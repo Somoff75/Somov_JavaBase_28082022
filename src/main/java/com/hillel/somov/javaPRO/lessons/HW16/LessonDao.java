@@ -63,16 +63,15 @@ public class LessonDao {
         return lesson;
     }
 
-    public static int update(Lesson lesson) throws SQLException {
+    public static void update(Lesson lesson) throws SQLException {
 
         Connection connection = DataBaseConnection.getMyConnection();
-        PreparedStatement ps = connection.prepareStatement("update lesson set name=?, homework=? where id=?");
+        PreparedStatement ps = connection.prepareStatement("update lespson set name=?, homework=? where id=?");
         ps.setString(2, lesson.getHomework());
         ps.setString(1, lesson.getName());
         ps.setInt(3, Integer.parseInt(String.valueOf(lesson.getId())));
         int status = ps.executeUpdate();
         connection.close();
-        return status;
     }
 
 }

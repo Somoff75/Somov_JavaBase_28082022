@@ -26,6 +26,10 @@ public class DataBaseConnection extends LessonDao {
         homework.setName("HW17");
         homework.setDescription("Do something new");
 
+        addLesson(lesson);
+
+        update(lesson);
+
         System.out.println(lesson);
 
         System.out.println(allLessons());
